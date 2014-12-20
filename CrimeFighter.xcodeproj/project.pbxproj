@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9337CED19099AF4006FAA09 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9337CEC19099AF4006FAA09 /* FacebookSDK.framework */; };
+		E9337CF01909A030006FAA09 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9337CEF1909A030006FAA09 /* LoginViewController.m */; };
+		E99F505C19063193003F5805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F505B19063193003F5805 /* Foundation.framework */; };
+		E99F505E19063193003F5805 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F505D19063193003F5805 /* CoreGraphics.framework */; };
+		E99F506019063193003F5805 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F505F19063193003F5805 /* UIKit.framework */; };
+		E99F506619063193003F5805 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E99F506419063193003F5805 /* InfoPlist.strings */; };
+		E99F506819063193003F5805 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F506719063193003F5805 /* main.m */; };
+		E99F506C19063193003F5805 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F506B19063193003F5805 /* AppDelegate.m */; };
+		E99F506F19063193003F5805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99F506D19063193003F5805 /* Main.storyboard */; };
+		E99F507219063193003F5805 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F507119063193003F5805 /* ViewController.m */; };
+		E99F507419063194003F5805 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99F507319063194003F5805 /* Images.xcassets */; };
+		E99F507B19063194003F5805 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F507A19063194003F5805 /* XCTest.framework */; };
+		E99F507C19063194003F5805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F505B19063193003F5805 /* Foundation.framework */; };
+		E99F507D19063194003F5805 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F505F19063193003F5805 /* UIKit.framework */; };
+		E99F508519063194003F5805 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E99F508319063194003F5805 /* InfoPlist.strings */; };
+		E99F508719063194003F5805 /* CrimeFighterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F508619063194003F5805 /* CrimeFighterTests.m */; };
+		E99F53A019068640003F5805 /* CFDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E99F539E19068640003F5805 /* CFDataModel.xcdatamodeld */; };
+		E99F53AC19069D3C003F5805 /* CrimesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F53AB19069D3C003F5805 /* CrimesTableViewController.m */; };
+		E9FF6DF01909C18400187367 /* AddCrimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF6DEF1909C18400187367 /* AddCrimeViewController.m */; };
+		E9FF6DFE190A798000187367 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FF6DFD190A798000187367 /* MapKit.framework */; };
+		E9FF6E01190A97FA00187367 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF6E00190A97FA00187367 /* Login.m */; };
+		E9FF6E10190AD11A00187367 /* LoginPostObj.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF6E0F190AD11A00187367 /* LoginPostObj.m */; };
+		E9FF6E13190AD2E900187367 /* CrimePostObj.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF6E12190AD2E900187367 /* CrimePostObj.m */; };
+		E9FF6E15190B1F0E00187367 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FF6E14190B1F0E00187367 /* CoreLocation.framework */; };
+		E9FF6E18190B204D00187367 /* ViewCrimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF6E17190B204D00187367 /* ViewCrimeViewController.m */; };
+		E9FF6E1B190B303000187367 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF6E1A190B303000187367 /* Crime.m */; };
+		EF48FFFA3B54430A9CDE6AD3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799E877C12EB4FB7ACCB5255 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E99F507E19063194003F5805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E99F505019063193003F5805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99F505719063193003F5805;
+			remoteInfo = CrimeFighter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4839DBBF8E934928AA58E915 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		799E877C12EB4FB7ACCB5255 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9337CEC19099AF4006FAA09 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		E9337CEE1909A030006FAA09 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E9337CEF1909A030006FAA09 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E99F505819063193003F5805 /* CrimeFighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimeFighter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99F505B19063193003F5805 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E99F505D19063193003F5805 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E99F505F19063193003F5805 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E99F506319063193003F5805 /* CrimeFighter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrimeFighter-Info.plist"; sourceTree = "<group>"; };
+		E99F506519063193003F5805 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E99F506719063193003F5805 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E99F506919063193003F5805 /* CrimeFighter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrimeFighter-Prefix.pch"; sourceTree = "<group>"; };
+		E99F506A19063193003F5805 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E99F506B19063193003F5805 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E99F506E19063193003F5805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E99F507019063193003F5805 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E99F507119063193003F5805 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E99F507319063194003F5805 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E99F507919063194003F5805 /* CrimeFighterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrimeFighterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99F507A19063194003F5805 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E99F508219063194003F5805 /* CrimeFighterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrimeFighterTests-Info.plist"; sourceTree = "<group>"; };
+		E99F508419063194003F5805 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E99F508619063194003F5805 /* CrimeFighterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrimeFighterTests.m; sourceTree = "<group>"; };
+		E99F539F19068640003F5805 /* CFDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CFDataModel.xcdatamodel; sourceTree = "<group>"; };
+		E99F53AA19069D3C003F5805 /* CrimesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimesTableViewController.h; sourceTree = "<group>"; };
+		E99F53AB19069D3C003F5805 /* CrimesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimesTableViewController.m; sourceTree = "<group>"; };
+		E9FF6DEE1909C18400187367 /* AddCrimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCrimeViewController.h; sourceTree = "<group>"; };
+		E9FF6DEF1909C18400187367 /* AddCrimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCrimeViewController.m; sourceTree = "<group>"; };
+		E9FF6DFD190A798000187367 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9FF6DFF190A97FA00187367 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		E9FF6E00190A97FA00187367 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		E9FF6E0E190AD11A00187367 /* LoginPostObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPostObj.h; sourceTree = "<group>"; };
+		E9FF6E0F190AD11A00187367 /* LoginPostObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPostObj.m; sourceTree = "<group>"; };
+		E9FF6E11190AD2E900187367 /* CrimePostObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimePostObj.h; sourceTree = "<group>"; };
+		E9FF6E12190AD2E900187367 /* CrimePostObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimePostObj.m; sourceTree = "<group>"; };
+		E9FF6E14190B1F0E00187367 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E9FF6E16190B204D00187367 /* ViewCrimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewCrimeViewController.h; path = ../ViewCrimeViewController.h; sourceTree = "<group>"; };
+		E9FF6E17190B204D00187367 /* ViewCrimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewCrimeViewController.m; path = ../ViewCrimeViewController.m; sourceTree = "<group>"; };
+		E9FF6E19190B302F00187367 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crime.h; sourceTree = "<group>"; };
+		E9FF6E1A190B303000187367 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crime.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E99F505519063193003F5805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9FF6E15190B1F0E00187367 /* CoreLocation.framework in Frameworks */,
+				E99F505E19063193003F5805 /* CoreGraphics.framework in Frameworks */,
+				E9337CED19099AF4006FAA09 /* FacebookSDK.framework in Frameworks */,
+				E99F506019063193003F5805 /* UIKit.framework in Frameworks */,
+				E99F505C19063193003F5805 /* Foundation.framework in Frameworks */,
+				E9FF6DFE190A798000187367 /* MapKit.framework in Frameworks */,
+				EF48FFFA3B54430A9CDE6AD3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99F507619063194003F5805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F507B19063194003F5805 /* XCTest.framework in Frameworks */,
+				E99F507D19063194003F5805 /* UIKit.framework in Frameworks */,
+				E99F507C19063194003F5805 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E99F504F19063193003F5805 = {
+			isa = PBXGroup;
+			children = (
+				E99F506119063193003F5805 /* CrimeFighter */,
+				E99F508019063194003F5805 /* CrimeFighterTests */,
+				E99F505A19063193003F5805 /* Frameworks */,
+				E99F505919063193003F5805 /* Products */,
+				4839DBBF8E934928AA58E915 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E99F505919063193003F5805 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99F505819063193003F5805 /* CrimeFighter.app */,
+				E99F507919063194003F5805 /* CrimeFighterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E99F505A19063193003F5805 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9FF6E14190B1F0E00187367 /* CoreLocation.framework */,
+				E9FF6DFD190A798000187367 /* MapKit.framework */,
+				E9337CEC19099AF4006FAA09 /* FacebookSDK.framework */,
+				E99F505B19063193003F5805 /* Foundation.framework */,
+				E99F505D19063193003F5805 /* CoreGraphics.framework */,
+				E99F505F19063193003F5805 /* UIKit.framework */,
+				E99F507A19063194003F5805 /* XCTest.framework */,
+				799E877C12EB4FB7ACCB5255 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E99F506119063193003F5805 /* CrimeFighter */ = {
+			isa = PBXGroup;
+			children = (
+				E99F506A19063193003F5805 /* AppDelegate.h */,
+				E99F506B19063193003F5805 /* AppDelegate.m */,
+				E99F506D19063193003F5805 /* Main.storyboard */,
+				E99F507019063193003F5805 /* ViewController.h */,
+				E99F507119063193003F5805 /* ViewController.m */,
+				E99F507319063194003F5805 /* Images.xcassets */,
+				E99F506219063193003F5805 /* Supporting Files */,
+				E9FF6DFF190A97FA00187367 /* Login.h */,
+				E9FF6E00190A97FA00187367 /* Login.m */,
+				E99F539E19068640003F5805 /* CFDataModel.xcdatamodeld */,
+				E9FF6E19190B302F00187367 /* Crime.h */,
+				E9FF6E1A190B303000187367 /* Crime.m */,
+				E9FF6E16190B204D00187367 /* ViewCrimeViewController.h */,
+				E9FF6E17190B204D00187367 /* ViewCrimeViewController.m */,
+				E99F53AA19069D3C003F5805 /* CrimesTableViewController.h */,
+				E99F53AB19069D3C003F5805 /* CrimesTableViewController.m */,
+				E9337CEE1909A030006FAA09 /* LoginViewController.h */,
+				E9337CEF1909A030006FAA09 /* LoginViewController.m */,
+				E9FF6DEE1909C18400187367 /* AddCrimeViewController.h */,
+				E9FF6DEF1909C18400187367 /* AddCrimeViewController.m */,
+				E9FF6E0E190AD11A00187367 /* LoginPostObj.h */,
+				E9FF6E0F190AD11A00187367 /* LoginPostObj.m */,
+				E9FF6E11190AD2E900187367 /* CrimePostObj.h */,
+				E9FF6E12190AD2E900187367 /* CrimePostObj.m */,
+			);
+			path = CrimeFighter;
+			sourceTree = "<group>";
+		};
+		E99F506219063193003F5805 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E99F506319063193003F5805 /* CrimeFighter-Info.plist */,
+				E99F506419063193003F5805 /* InfoPlist.strings */,
+				E99F506719063193003F5805 /* main.m */,
+				E99F506919063193003F5805 /* CrimeFighter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E99F508019063194003F5805 /* CrimeFighterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E99F508619063194003F5805 /* CrimeFighterTests.m */,
+				E99F508119063194003F5805 /* Supporting Files */,
+			);
+			path = CrimeFighterTests;
+			sourceTree = "<group>";
+		};
+		E99F508119063194003F5805 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E99F508219063194003F5805 /* CrimeFighterTests-Info.plist */,
+				E99F508319063194003F5805 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E99F505719063193003F5805 /* CrimeFighter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99F508A19063194003F5805 /* Build configuration list for PBXNativeTarget "CrimeFighter" */;
+			buildPhases = (
+				74E9AD89544148C8B7250017 /* Check Pods Manifest.lock */,
+				E99F505419063193003F5805 /* Sources */,
+				E99F505519063193003F5805 /* Frameworks */,
+				E99F505619063193003F5805 /* Resources */,
+				E288490D1C7644FDA480A74D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrimeFighter;
+			productName = CrimeFighter;
+			productReference = E99F505819063193003F5805 /* CrimeFighter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E99F507819063194003F5805 /* CrimeFighterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99F508D19063194003F5805 /* Build configuration list for PBXNativeTarget "CrimeFighterTests" */;
+			buildPhases = (
+				E99F507519063194003F5805 /* Sources */,
+				E99F507619063194003F5805 /* Frameworks */,
+				E99F507719063194003F5805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E99F507F19063194003F5805 /* PBXTargetDependency */,
+			);
+			name = CrimeFighterTests;
+			productName = CrimeFighterTests;
+			productReference = E99F507919063194003F5805 /* CrimeFighterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E99F505019063193003F5805 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sumeer Sinha";
+				TargetAttributes = {
+					E99F505719063193003F5805 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E99F507819063194003F5805 = {
+						TestTargetID = E99F505719063193003F5805;
+					};
+				};
+			};
+			buildConfigurationList = E99F505319063193003F5805 /* Build configuration list for PBXProject "CrimeFighter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E99F504F19063193003F5805;
+			productRefGroup = E99F505919063193003F5805 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E99F505719063193003F5805 /* CrimeFighter */,
+				E99F507819063194003F5805 /* CrimeFighterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E99F505619063193003F5805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F507419063194003F5805 /* Images.xcassets in Resources */,
+				E99F506619063193003F5805 /* InfoPlist.strings in Resources */,
+				E99F506F19063193003F5805 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99F507719063194003F5805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F508519063194003F5805 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74E9AD89544148C8B7250017 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E288490D1C7644FDA480A74D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E99F505419063193003F5805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9FF6E1B190B303000187367 /* Crime.m in Sources */,
+				E9337CF01909A030006FAA09 /* LoginViewController.m in Sources */,
+				E9FF6DF01909C18400187367 /* AddCrimeViewController.m in Sources */,
+				E9FF6E01190A97FA00187367 /* Login.m in Sources */,
+				E99F53A019068640003F5805 /* CFDataModel.xcdatamodeld in Sources */,
+				E9FF6E13190AD2E900187367 /* CrimePostObj.m in Sources */,
+				E99F507219063193003F5805 /* ViewController.m in Sources */,
+				E99F506C19063193003F5805 /* AppDelegate.m in Sources */,
+				E9FF6E10190AD11A00187367 /* LoginPostObj.m in Sources */,
+				E99F53AC19069D3C003F5805 /* CrimesTableViewController.m in Sources */,
+				E9FF6E18190B204D00187367 /* ViewCrimeViewController.m in Sources */,
+				E99F506819063193003F5805 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99F507519063194003F5805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F508719063194003F5805 /* CrimeFighterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E99F507F19063194003F5805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E99F505719063193003F5805 /* CrimeFighter */;
+			targetProxy = E99F507E19063194003F5805 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E99F506419063193003F5805 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99F506519063193003F5805 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E99F506D19063193003F5805 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99F506E19063193003F5805 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E99F508319063194003F5805 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99F508419063194003F5805 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E99F508819063194003F5805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E99F508919063194003F5805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E99F508B19063194003F5805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4839DBBF8E934928AA58E915 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrimeFighter/CrimeFighter-Prefix.pch";
+				INFOPLIST_FILE = "CrimeFighter/CrimeFighter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E99F508C19063194003F5805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4839DBBF8E934928AA58E915 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrimeFighter/CrimeFighter-Prefix.pch";
+				INFOPLIST_FILE = "CrimeFighter/CrimeFighter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E99F508E19063194003F5805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrimeFighter.app/CrimeFighter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrimeFighter/CrimeFighter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CrimeFighterTests/CrimeFighterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E99F508F19063194003F5805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrimeFighter.app/CrimeFighter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrimeFighter/CrimeFighter-Prefix.pch";
+				INFOPLIST_FILE = "CrimeFighterTests/CrimeFighterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E99F505319063193003F5805 /* Build configuration list for PBXProject "CrimeFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99F508819063194003F5805 /* Debug */,
+				E99F508919063194003F5805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99F508A19063194003F5805 /* Build configuration list for PBXNativeTarget "CrimeFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99F508B19063194003F5805 /* Debug */,
+				E99F508C19063194003F5805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99F508D19063194003F5805 /* Build configuration list for PBXNativeTarget "CrimeFighterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99F508E19063194003F5805 /* Debug */,
+				E99F508F19063194003F5805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E99F539E19068640003F5805 /* CFDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E99F539F19068640003F5805 /* CFDataModel.xcdatamodel */,
+			);
+			currentVersion = E99F539F19068640003F5805 /* CFDataModel.xcdatamodel */;
+			path = CFDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E99F505019063193003F5805 /* Project object */;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Crime" representedClassName="Crime" syncable="YES">
+        <attribute name="crime_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crime_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="crime_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_user" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Login" representedClassName="Login" syncable="YES">
+        <attribute name="id_user" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_FBID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Crime" positionX="-54" positionY="18" width="128" height="163"/>
+        <element name="Login" positionX="-191" positionY="27" width="128" height="103"/>
+    </elements>
+</model>
